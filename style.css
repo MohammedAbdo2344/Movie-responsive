@@ -1,0 +1,288 @@
+body {
+    background-image: url("assets/img/background_website.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar */
+.navbar {
+    background-color: slateblue;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    ;
+}
+
+.navbar .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    color: white;
+    margin-right: 50px;
+}
+
+.navbar .logo span {
+    color: dodgerblue;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.searchBar {
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.fa-magnifying-glass,
+.fa-twitter,
+.fa-telegram,
+.fa-facebook {
+    color: white;
+}
+
+.fa-magnifying-glass {
+    margin-right: 15px;
+}
+
+#searchInput {
+    background-color: black;
+    border: none;
+    height: 50px;
+    width: 400px;
+    margin-right: 5px;
+}
+
+#searchButton {
+    border-radius: 50px;
+    width: 25%;
+    height: 35px;
+    margin-left: 7px;
+    margin-right: 5px;
+    font-size: large;
+}
+
+.icons {
+    display: flex;
+    background-color: black;
+    border-radius: 10px;
+    padding: 4px 10px;
+    height: 50px;
+    border-radius: 50px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.mg-10 {
+    margin: 5px 10px;
+}
+
+.fs-lg {
+    font-size: 1.9em;
+}
+
+.fa-twitter:hover,
+.fa-telegram:hover,
+.fa-facebook:hover {
+    background-color: blue;
+}
+
+
+/* Contant */
+.contant {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contant .Movie {
+    border: 1px solid white;
+    color: white;
+    width: 20%;
+    height: 500px;
+    margin: 15px;
+}
+
+.contant .Movie img {
+    width: 100%;
+    height: 420px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1120px) {
+    .contant .Movie {
+        width: 40%;
+    }
+
+    #searchInput {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .contant .Movie {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin-left: -20px;
+    }
+
+    .searchBar {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #searchInput {
+        width: 220px;
+    }
+
+    .icons {
+        margin-bottom: 10px;
+    }
+
+    .navbar .logo {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 1007px) {
+
+    #searchInput {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+
+    #searchInput {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 890px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    #searchInput {
+        width: 300px;
+
+    }
+    .searchBar{
+        margin-bottom: 10px;
+
+    }
+
+    .icons {
+        margin-right: 25px;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width :600px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    #searchInput{
+        width: 400px;
+    }
+    .searchBar {
+        margin-bottom: 15px;
+        margin-left: -30px;
+    }
+    .icons{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 570px) {
+
+    .searchBar {
+        margin-left: 30px;
+    }
+    .icons{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 540px) {
+
+    #searchInput {
+        width: 360px;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    #searchInput{
+        width: 300px;
+    }
+    .searchBar {
+        margin-left: 30px;
+    }
+    .icons{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 414px) {
+    #searchInput{
+        width: 200px;
+    }
+    .icons{
+        margin-left: 50px;
+    }
+
+}
+@media screen and (max-width: 390px) {
+    #searchInput{
+        width: 150px;
+    }
+    #searchButton {
+        font-size: medium;
+    }
+    .navbar .logo{
+        font-size:large;
+    }
+}
+@media screen and (max-width: 280px) {
+    #searchInput{
+        width: 120px;
+    }
+    #searchButton {
+        font-size: small;
+    }
+    .navbar .logo{
+        font-size:small;
+    }
+}
