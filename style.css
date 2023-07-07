@@ -66,6 +66,8 @@ body {
     height: 50px;
     width: 400px;
     margin-right: 5px;
+    color: white;
+    font-size: large;
 }
 
 #searchButton {
@@ -116,11 +118,42 @@ body {
     margin-top: 40px;
 }
 
+/* .img-title {
+    
+    height: 420px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+} */
+
+.hide {
+    display: none;
+}
+
+.Movie:hover .hide {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    bottom: 420px;
+    flex-direction: column;
+    color: white;
+    font-size: large;
+    overflow: hidden;
+    animation: title 2s;
+}
+.ml-5{
+    margin-left:50px;
+}
+
 .contant .Movie {
-    border: 1px solid white;
+    border: 1px solid slateblue;
     color: white;
     width: 20%;
-    height: 500px;
+    height: 420px;
     margin: 15px;
 }
 
@@ -128,6 +161,23 @@ body {
     width: 100%;
     height: 420px;
 }
+
+/* Animation  */
+@keyframes title {
+    0%{
+        opacity: 0;
+        bottom: 150px;
+    }
+    70%{
+        opacity: 1;
+        bottom: 420px;
+    }
+    100%{
+        opacity: 1;
+        bottom: 420px;
+    }
+}
+
 
 /* Media Query */
 @media screen and (max-width: 1120px) {
@@ -197,7 +247,8 @@ body {
         width: 300px;
 
     }
-    .searchBar{
+
+    .searchBar {
         margin-bottom: 10px;
 
     }
@@ -217,72 +268,88 @@ body {
         flex-direction: column;
     }
 
-    #searchInput{
+    #searchInput {
         width: 400px;
     }
+
     .searchBar {
         margin-bottom: 15px;
         margin-left: -30px;
     }
-    .icons{
+
+    .icons {
         margin-bottom: 15px;
     }
 }
+
 @media screen and (max-width: 570px) {
 
     .searchBar {
         margin-left: 30px;
     }
-    .icons{
+
+    .icons {
         margin-left: 20px;
     }
 }
+
 @media screen and (max-width: 540px) {
 
     #searchInput {
         width: 360px;
     }
 }
+
 @media screen and (max-width: 480px) {
 
-    #searchInput{
+    #searchInput {
         width: 300px;
     }
+
     .searchBar {
         margin-left: 30px;
     }
-    .icons{
+
+    .icons {
         margin-left: 20px;
     }
 }
+
 @media screen and (max-width: 414px) {
-    #searchInput{
+    #searchInput {
         width: 200px;
     }
-    .icons{
+
+    .icons {
         margin-left: 50px;
     }
 
 }
+
 @media screen and (max-width: 390px) {
-    #searchInput{
+    #searchInput {
         width: 150px;
     }
+
     #searchButton {
         font-size: medium;
     }
-    .navbar .logo{
-        font-size:large;
+
+    .navbar .logo {
+        font-size: large;
     }
 }
+
 @media screen and (max-width: 280px) {
-    #searchInput{
+    #searchInput {
         width: 120px;
     }
+
     #searchButton {
         font-size: small;
     }
-    .navbar .logo{
-        font-size:small;
+
+    .navbar .logo {
+        font-size: small;
     }
 }
